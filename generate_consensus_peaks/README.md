@@ -59,7 +59,7 @@ Replace `.narrowPeak files` with `.broadPeak files` if necessary.
 Create intersection matrix files using `create_intersection_matrix.py` script.
 
 ```
-python create_intersect_matrix.py merged.consensus_peaks.txt output.intersection.txt --min_replicates 1
+python create_intersect_matrix.py merged.consensus_peaks.txt output.txt --min_replicates 1
 ```
 
 ## Script Output
