@@ -38,6 +38,8 @@ micromamba env create -f environment.yml
 
 Replace `micromamba` with `microconda` if you installed Microconda instead.
 
+## Running the Analysis
+
 4. **Activate the Environment**
 
 ```
