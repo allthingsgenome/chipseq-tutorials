@@ -15,11 +15,7 @@ Before proceeding, ensure that you have the following software installed:
 
 ## Installation
 
-1. **Install BEDTools**
-
-If you haven't already, install BEDTools by following the instructions for your operating system from the official website: [https://bedtools.readthedocs.io/en/latest/content/installation.html](https://bedtools.readthedocs.io/en/latest/content/installation.html)
-
-2. **Install Micromamba or Microconda**
+1. **Install Micromamba or Microconda**
 
 Micromamba and Microconda are lightweight alternatives to the full Anaconda distribution, designed for environments where disk space is limited or when you need a faster installation process.
 
@@ -28,7 +24,7 @@ To install Micromamba or Microconda, follow the instructions from the respective
 - Micromamba: [https://github.com/mamba-org/mamba](https://github.com/mamba-org/mamba)
 - Microconda: [https://repo.anaconda.com/miniconda/](https://repo.anaconda.com/miniconda/)
 
-3. **Create a Conda Environment**
+2. **Create a Conda Environment**
 
 Once you have Micromamba or Microconda installed, create a new conda environment with Python 3.10 by running the following command:
 
@@ -40,7 +36,7 @@ Replace `micromamba` with `microconda` if you installed Microconda instead.
 
 ## Running the Analysis
 
-4. **Activate the Environment**
+3. **Activate the Environment**
 
 ```
 micromamba activate py3
@@ -48,7 +44,7 @@ micromamba activate py3
 
 Replace `micromamba` with `microconda` if you installed Microconda instead.
 
-5. **Create Consensus Peak File**
+4. **Create Consensus Peak File**
 
 Create a merged peak file using bedtools mergeBed.
 
@@ -58,7 +54,7 @@ sort -k1,1 -k2,2n *.narrowPeak | mergeBed -c 2,3,4,5,6,7,8,9 -o collapse,collaps
 
 Replace `.narrowPeak files` with `.broadPeak files` if necessary.
 
-6. **Create Intersection Matrix Files**
+5. **Create Intersection Matrix Files**
 
 Create intersection matrix files using `create_intersection_matrix.py` script.
 
